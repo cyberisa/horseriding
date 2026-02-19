@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/HUDController.gd" id="1"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1")
+
+[node name="SpeedLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 24.0
+offset_top = 24.0
+text = "Speed: 0 km/h"
+
+[node name="StaminaBar" type="TextureProgressBar" parent="."]
+unique_name_in_owner = true
+offset_left = 24.0
+offset_top = 56.0
+offset_right = 300.0
+offset_bottom = 84.0
+value = 100.0
+
+[node name="ObjectiveLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 24.0
+offset_top = 92.0
+text = "Press E near race marker to start Dust Sprint"
+
+[node name="ProgressionLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 24.0
+offset_top = 124.0
+text = "$100 | REP 0 | SPD 0 | STA 0"
